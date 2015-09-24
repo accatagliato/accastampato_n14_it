@@ -1,0 +1,52 @@
+\documentclass[a4paper,11pt,sfbold,twocolumn,nocenter,noindent,final,subscriber]{openjournal}
+% electronic, subscriber, printed
+\usepackage{balance}
+%\usepackage[T1]{fontenc}
+%\usepackage[postscript]{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{bibentry}
+\usepackage[pdftex=false,dvips=false,a4paper,body={19cm, 23.7cm},marginparwidth=0pt,twoside=true,twosideshift=5pt]{geometry}
+\usepackage{mdwlist}
+\usepackage{booktabs}
+\usepackage{url}
+%\usepackage{textcomp}
+\usepackage{wrapfig}
+\ifprinted
+  \usepackage[cam,special,center,pdftex]{fsmcrop}
+  %\renewcommand{\url}[1]{\texttt{\textcolor{SubjectColor}{#1}}}
+  \def\UrlFont{\tt}%\color{SubjectColor}}
+  %}
+\else
+%  \usepackage[colorlinks,urlcolor=SubjectColor,draft]{fsmhyperref}
+%  \def\pdfBorderAttrs{/Border [0 0 0] } % No border around Links
+  \relax
+\fi
+\usepackage{eurosym}
+\setlength\headwidth{\textwidth}
+\setlength\unitlength{1pt}
+\iffinal
+  \relax
+\else
+  \usepackage{fsmshowframe}
+\fi
+
+\newcommand{\mybibentry}[1]{\cite{#1}~\bibentry{#1}}
+
+\issuenumber=14
+\issuemonth{Settembre}
+\issueyear=2015
+\issnnumber{xxxx-xxxx}
+\linespread{1.1}
+
+\graphicspath{{../../common_it/graphics/}
+{../graphics/}}
+\noparskip
+
+\widowpenalty=3000
+\clubpenalty=3000
+\typeout{======> \the\abovedisplayskip}
+\typeout{======> \the\abovedisplayshortskip}
+\typeout{======> \the\belowdisplayskip}
+\typeout{======> \the\belowdisplayshortskip}
+\typeout{======> \the\parskip}

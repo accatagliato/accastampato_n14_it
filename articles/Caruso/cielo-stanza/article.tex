@@ -1,0 +1,61 @@
+\parstart{O}{gni} volta che alziamo gli occhi al cielo in una bella giornata, sappiamo di trovarlo azzurro, magari con qualche nuvoletta bianca che ci scivola pigra davanti. Ma perché proprio azzurro?
+
+\section*{La luce solare}
+Per rispondere a questa domanda è utile fare un passo indietro e capire come è fatta la luce che ci arriva dal Sole. La nostra stella, come tutte le altre, può essere considerata con buona approssimazione un corpo nero, cioè un corpo in grado di emettere radiazione elettromagnetica a tutte le lunghezze d'onda. Quelle comprese tra i $400~\nano\meter$ e gli $800$ sono quelle corrispondenti alla luce visibile, dal blu al rosso. La luce bianca che vediamo provenire dal Sole è frutto della sovrapposizione delle varie lunghezze d'onda.
+
+\begin{figure}[!b]
+\begin{center}
+\fsmgraphics[width=\columnwidth]{../articles/Caruso/cielo-stanza/}{Solar_spectrum_it}
+\caption{\textbf{\figurename~1} -- Spettro di emissione del Sole (da \url{wikimedia.org}). Come si può vedere, la distribuzione è simile a quella che ci si aspetta da un corpo nero a una temperatura di $5778~\kelvin$. Man mano che la luce passa attraverso l'atmosfera, parte della radiazione è assorbita dai gas in specifiche bande di assorbimento.}
+\label{fig:spettro}
+\end{center}
+\vskip-20pt
+\end{figure}
+
+\section*{Lo scattering}
+Ma allora perché non vediamo un cielo uniformemente bianco? 
+Prima di arrivare ai nostri occhi, la luce del Sole viaggia attraverso l'atmosfera, dove viene diffusa dalle molecole di gas che formano l'atmosfera stessa. Nel caso in cui le particelle che causano la diffusione abbiano dimensioni molto più piccole della lunghezza dell'onda incidente si parla di \emph{scattering di Rayleigh}, che è un'approssimazione della più generale \emph{teoria dello scattering di Mie}.
+
+L'intensità della luce diffusa dipende dall'inverso della lunghezza d'onda elevata alla quarta potenza $(I\propto 1/\lambda^4)$ \cite{rayleigh} perciò le onde più ``{corte}'', cioè quelle che corrispondono al blu e al violetto, saranno quelle maggiormente soggette a diffusione. 
+
+% Inoltre, l'intensità della luce diffusa non dipende dalla direzione, dunque la luce blu-violetta viene diffusa allo stesso modo in tutte le direzioni.
+
+Basandoci soltanto sulla legge dello scattering di Rayleigh, dovremmo allora vedere un cielo tendente al violetto anziché all'azzurro.
+Se però a questo fenomeno aggiungiamo il fatto che lo spettro di emissione del Sole ha un picco alle lunghezze d'onda giallo-verdi, e diminuisce bruscamente in corrispondenza del violetto (cfr. \figurename~\ref{fig:spettro}), il fatto che l'occhio umano è poco sensibile alle lunghezze d'onda più corte dello spettro del visibile \cite{sensibilita} e il fatto che l'ossigeno presente nell'atmosfera assorbe le lunghezze d'onda al limite dell'ultravioletto, ecco spiegato il colore azzurro del cielo sopra le nostre teste.
+
+\section*{E al tramonto?}
+Il cielo però non è sempre azzurro: al tramonto, a Ovest, lo vediamo colorarsi di tutte le sfumature del rosso e del giallo, mentre a Oriente l'azzurro diventa sempre più scuro fino ad arrivare al blu. All'alba invece vediamo il cielo schiarirsi lentamente a partire da Est, tingendosi di una sfumatura più tenue di rosso.
+Questi due momenti della giornata corrispondono ai momenti in cui il Sole è più basso all'orizzonte, il che significa che la sua luce per raggiungere i nostri occhi deve attraversare un volume decisamente maggiore di aria rispetto a quando il sole si trova alto sulle nostre teste. Perciò, lo scattering delle lunghezze d'onda corte aumenta ulteriormente, fino a che praticamente tutta la luce blu-violetta viene deviata e non raggiunge più l'occhio dell'osservatore. Le lunghezze d'onda che giungono indisturbate sono quelle più lunghe, che corrispondono al rosso e al giallo, ed è per questo che all'alba e al tramonto osserviamo un cielo tendente all'arancione.
+
+\section*{E con le nuvole come la mettiamo?}
+La luce del Sole viene diffusa ovviamente anche dalle nuvole, che però appaiono bianche o al più blu-grigiastre. Poiché le particelle che compongono le nuvole sono di dimensioni molto maggiori della lunghezza d'onda della luce, la teoria dello scattering di Rayleigh non può più essere applicata. In questo caso, occorre descrivere la diffusione della luce da parte delle particelle che compongono le nuvole (per lo più goccioline d'acqua) utilizzando la teoria dello scattering di Mie, di cui lo scattering Rayleigh rappresenta un caso particolare.
+
+Possiamo ragionare qualitativamente analizzando le condizioni affinché ci si trovi nell'approssimazione di scattering Rayleigh. In questo caso, l'intensità della radiazione diffusa è data da $I\propto d^6/\lambda^4$, per $d\ll\lambda$, dove $d$ è il diametro della particella e $\lambda$ la lunghezza d'onda della luce. Quando $d\gg\lambda$, il diametro della particella diventa l'unica variabile da cui dipende l'intensità della radiazione scatterata, pertanto tutte le lunghezze d'onda vengono diffuse allo stesso modo e la luce risulta bianca.
+
+\begin{figure}[!b]
+\begin{center}
+\fsmgraphics[width=\columnwidth]{../articles/Caruso/cielo-stanza/}{tutto_insieme}
+\caption{\textbf{\figurename~2} -- A sinistra: la brocca è piena soltanto di acqua, la luce della torcia non è visibile all'interno del liquido. Al centro: facendo passare il raggio di luce attraverso una soluzione di acqua e latte si vede che esso assume una colorazione azzurrina. L'effetto è più evidente nella porzione di soluzione più vicina alla sorgente. A destra: osservando il fascio di luce attraverso la soluzione (la torcia si trova ora dietro alla brocca), si vede come questo assuma una colorazione arancio-rossiccia che ricorda il cielo al tramonto.}
+\label{fig:esperimento}
+\end{center}
+\vskip-20pt
+\end{figure}
+
+Al tramonto o all'alba le nuvole appaiono talvolta rosa o arancio, ma non sono realmente di questo colore: semplicemente riflettono la luce solare, che in questi due momenti della giornata appare giallo-rossastra per via dello scattering di Rayleigh, come si è detto nel paragrafo precedente.
+Le nuvole temporalesche sono invece blu-grigiastre: questo perché contengono una grande quantità d'acqua, e l'acqua tende ad assorbire le lunghezze d'onda vicine all'infrarosso e a diffondere quelle del blu-violetto.
+
+\section*{Il cielo in un... bicchiere}
+Sfruttando l'\emph{effetto Tyndall}, ovvero lo scattering della luce in soluzioni colloidali, possiamo facilmente ricreare i colori del cielo in un bicchiere. 
+Basterà preparare una soluzione di acqua e latte e illuminarla con una torcia posta perpendicolarmente all'asse del bicchiere: osserveremo che la luce della torcia vista attraverso il bicchiere è di un azzurro tenue. Se ora spostiamo la torcia in modo che formi un angolo piuttosto piccolo con l'asse del bicchiere vedremo che questa volta la luce della torcia è di una sfumatura arancione. Lo stesso effetto si ottiene guardando la torcia attraverso una quantità maggiore della soluzione (cfr. \figurename~\ref{fig:esperimento}).
+Questo perché anche lo scattering Tyndall, come lo scattering Rayleigh, dipende dall'inverso della lunghezza d'onda della radiazione incidente, sebbene in maniera meno accentuata. Perciò anche in questo caso la luce blu viene per lo più diffusa mentre le altre lunghezze d'onda vengono trasmesse.
+
+La differenza tra le due approssimazioni è che nel caso di scattering Rayleigh le particelle sono di dimensioni molto minori della lunghezza d'onda incidente, mentre nel caso dello scattering Tyndall la dimensione delle particelle è dell'ordine del centinaio di nanometri, cioè comparabile con la lunghezza d'onda della luce incidente. Quest'ultimo perciò, ben si adatta a descrivere i fenomeni di diffusione della luce in soluzioni colloidali, come ad esempio un bicchiere di acqua e farina.
+A causa della maggiore dimensione delle particelle coinvolte, lo scattering Tyndall risulta molto più intenso dello scattering Rayleigh, perciò per ottenere gli stessi effetti di diffusione della luce abbiamo bisogno di un volume di sostanza molto minore.
+
+\balance
+\section*{Bibliografia}
+\mybibentry{rayleigh}\\
+\mybibentry{sensibilita}
+
+\smallskip
+Commenti on-line: \url{http://www.accastampato.it/2014/09/il-cielo-in-una-stanza/}

@@ -1,0 +1,111 @@
+
+% This may be deleted, according to our policy
+% I would like not to set paths like this, because
+% it becomes hard to solve ambiguity (what if two articles have
+% "figure1.png", or - more dangerously - if an ad has the same name as
+% a figure?)
+%
+%\graphicspath{
+%	{../../../htdocs/free_issues/issue_00/mac_revolution/}
+%	{../../../htdocs/free_issues/issue_00/content_tail/}
+%	{../../../htdocs/contribute/test_article/}
+%	{../ads/}
+%}
+
+% EXPERIMENTAL COMMANDS: (not yet fully tested)
+%
+% \shout - put a heading on the cover. It should be used within a frontcover
+%          environment. May never be used 
+%          Example: \shout{QQQ}{The beautiful subject}
+%
+% \halfad - put half an ad at the BOTTOM of the page. It's still a little
+%           unstable. Example: \halfad{ads/halfad.png}
+%
+% \columnad - put an ad on the right hand side column. Not sure if it's
+%             stable yet. Example: \columnad{ads/columnad.png}
+%
+% \pill - puts a "pill" (a very short article) at the bottom half of a
+%         page. It's still quite unstable.
+%         Example: \pill{../../../htdocs/daily_pills/2004/08/28/index}
+%
+% The latter three commands depends on the end position of the previous paper.
+% It shouldn't be so.
+%
+% MANDATORY AND/OR FULLY TESTED COMMANDS:
+%
+% \inputpaper - it's the default command to input a paper. It includes the 
+%               paper and terminates the last page. It has to be replaced by
+%               ordinary \input in case a pill or an ad will fill the rest of
+%               the last page. A LaTeX equivalent is \include{}
+%               Example: \inputpaper{articles/<article_dir>/index}
+%
+% \fullad - puts a full page ad on a page per se. 
+%           Example: \fullad{ads/fullad.png}
+
+\begin{document}
+
+\bibliographystyle{biblio_style}
+
+% Here is the frontcover, or page 1
+\begin{frontcover}{../graphics/}{acca14.pdf}
+\nobibliography{bibliography} % Problema risolto... http://newsgroups.derkeiler.com/Archive/Comp/comp.text.tex/2008-11/msg01061.html
+\end{frontcover}
+% \dummypage{Copertina}
+
+\secover{copyleft}
+% \dummypage{Second cover}
+
+%----------- Articles and ads ----------------
+
+% Toc
+\tovtoc
+
+% Editorial
+\fullad{futuro-remoto}
+% \dummypage{Fullad}
+%   
+\editorial{../articles/editorial/index}
+% \dummypage{Editoriale}
+
+%--------------- List of available advertisements --------------
+
+%  \newwrite\autore
+%  \immediate\openout\autore\jobname.auk
+%  \immediate\write\autore{ 
+%  P. Malacari skip
+%  }
+%  \immediate\closeout\autore
+
+\inputpaper{../articles/Caruso/cielo-stanza/index}
+
+\inputpaper{../articles/Marino/occhio-digitale/index}
+
+\inputpaper{../articles/Valli/elettrone-non-esiste/index}
+
+\inputpaper{../articles/Macri-Garziano/vuoto-quantistico/index}
+
+\inputpaper{../articles/Magazzu/micro-nano-oggetti/index}
+
+\inputpaper{../articles/Santoro-Scibilia/ablazione-laser/index}
+
+\inputpaper{../articles/Anastasi/esperimento-g2/index}
+
+\inputpaper{../articles/Organtini/anno-luce/index}
+
+%\dummypage{Full AD}
+
+% \dummypage{Experiment}
+% \review{../articles/experiments/levitation/index}
+
+%\dummypage{Full AD}
+
+% \dummypage{Review ``La radioattività intorno a noi''}
+%\review{../articles/reviews/radioattivita/index}
+
+\thirdcover{third}
+
+\begin{frontcover}{../graphics/}{acca14_back.pdf}
+\end{frontcover}
+% \dummypage{Quarta}
+
+\end{document}
