@@ -1,4 +1,4 @@
-# accastampato n. 14 (IT)
+# accastampato n. 14 (IT), v1.0.0
 
 Special number focused on the physics of light for the International Year of Light 2015.
 
