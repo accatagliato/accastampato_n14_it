@@ -1,5 +1,6 @@
 tmp*
-IRR_[0-9][0-9]_[a-z][a-z].*
+IRR_[0-9][0-9]_[a-z][a-z]*
 bibliography.bib
 article.tex
 A3/
+!IRR_[0-9][0-9]_[a-z][a-z].pdf
